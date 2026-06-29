@@ -1,0 +1,278 @@
+/*Universal Selector*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/*Header Styles*/
+
+#mainHeader{
+    text-align:center;
+    padding:2vh;
+    font-size:clamp(28px,3vw,48px);
+    font-weight:700;
+}
+/*Navigation Styles*/
+
+nav{
+    margin-bottom:20px;
+    background-color:#003366;
+    padding:10px;
+}
+
+nav a{
+    text-decoration:none;
+    margin-right:10px;
+}
+
+/*Welcome Banner*/
+
+#welcomeBanner{
+    background-color:rgba(0,123,255,0.8);   /* RGBA Color */
+    color:white;
+    padding:15px;
+    margin-top:15px;
+}
+/*Highlight Section*/
+
+.highlight{
+    background-color:yellow;
+    padding:5px;
+}
+
+/*Table Styles*/
+
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+}
+
+th{
+    border:2px solid #333;
+    padding:12px;
+    background-color:#0056b3;
+    color:white;
+    text-align:center;
+}
+
+td{
+    border:1px solid #999;
+    padding:15px;
+    text-align:center;
+    background-color:#ffffff;
+}
+
+/* Zebra Striping */
+
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+/*Image Styles*/
+
+img{
+    border:2px solid gray;
+    border-radius:8px;
+    width:100%;
+    max-width:200px;
+    height:auto;
+    object-fit:cover;
+}
+/*Form Styles*/
+
+form{
+    width:80%;
+    max-width:500px;
+    margin:20px auto;
+    padding:15px;
+    border:1px solid #ccc;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+button{
+    margin-top:10px;
+    padding:8px 15px;
+    margin-right:10px;
+}
+
+/*CTA Button Styles*/
+
+/* Style for main CTA button */
+.cta-button{
+    background-color:#007BFF;
+    color:white;
+}
+
+/*Element Selector*/
+
+h2{
+    color:white;
+    margin:20px 0;
+    padding:10px;
+    background:linear-gradient(to right,#007BFF,#00C6FF);
+
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+
+/*Event Card - Box Model*/
+
+.eventCard{
+    margin:15px;
+    padding:15px;
+    border:2px solid #007BFF;
+    border-radius:8px;
+    background-color:#ffffff;
+    text-align:center;
+    font-weight:500;
+}
+
+/*Grouping Selector*/
+
+h3,
+p{
+    color:#333;
+    text-align:justify;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/*Navigation List Styles*/
+/*  Navigation Menu*/
+
+.navMenu{
+    list-style-type:none;
+    list-style-position:inside;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:10px;
+    margin:10px 0;
+    flex-wrap:wrap;
+}
+
+/*List Item Styles*/
+.navMenu li{
+    padding:8px 12px;
+    margin:5px;
+}
+
+/*Link Styles*/
+
+/* Unvisited Link */
+.navMenu a:link{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+/* Visited Link */
+.navMenu a:visited{
+    color:#e0e0e0;
+}
+
+/* Mouse Hover */
+.navMenu a:hover{
+    color:#ffff00;
+    text-decoration:underline;
+}
+
+/* Active Link */
+.navMenu a:active{
+    color:red;
+}
+
+/*Form Outline*/
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:3px solid orange;
+}
+
+/*Visibility Demo*/
+
+.hiddenBox{
+    visibility:hidden;
+    background-color:lightblue;
+    padding:10px;
+    margin:10px 0;
+}
+
+.noneBox{
+    display:none;
+    background-color:lightcoral;
+    padding:10px;
+    margin:10px 0;
+}
+
+/*Community News*/
+
+.newsArticle{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+    text-align:justify;
+    margin:20px;
+}
+
+/*Responsive Design*/
+
+@media screen and (max-width:768px){
+
+    /* Navigation becomes vertical */
+    .navMenu{
+        list-style-type:none;
+        list-style-position:inside;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+        padding:10px;
+        margin:10px 0;
+        flex-wrap:wrap;
+    }
+
+    /* Smaller heading */
+    #mainHeader{
+        font-size:28px;
+    }
+
+    /* Section headings */
+    h2{
+        font-size:20px;
+    }
+
+    /* Images become smaller */
+    img{
+        max-width:150px;
+    }
+
+    /* Form becomes full width */
+    form{
+        width:95%;
+    }
+
+    /* Table adjusts */
+    table{
+        font-size:14px;
+    }
+
+    /* News becomes single column */
+    .newsArticle{
+        column-count:1;
+    }
+
+}
